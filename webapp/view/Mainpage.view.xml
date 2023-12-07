@@ -1,7 +1,52 @@
-<mvc:View controllerName="com.sap.teammarvelhub.controller.Mainpage"
-    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
-    xmlns="sap.m">
-    <Page id="page" title="{i18n>title}"  >
-        <content />
-    </Page>
+<mvc:View
+    controllerName="com.sap.teammarvelhub.controller.Mainpage"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+    <App id="app_id">
+        <pages>
+            <Page
+                id="page_id"
+                showHeader="false"
+                showSubHeader="true"
+                title="{i18n>title}"
+            >
+                <subHeader>
+                    <OverflowToolbar id="toolbar1">
+                        <Avatar
+                            id="avaterpage01"
+                            src="https://w0.peakpx.com/wallpaper/355/178/HD-wallpaper-all-avengers-logo-end-game-marvel.jpg"
+                            displaySize="S"
+                            displayShape="Circle"
+                            badgeValueState="Success"
+                            badgeIcon="sap-icon://message-success"
+                            showBorder="false"
+                            press="onPress"
+                        />
+                     <ToolbarSpacer id="_IDGenToolbarSpacer1"  width="40px" />
+                        <Text id="text01" text="|" />
+                        <Text id="test02" text="Menu" />
+                        <Button id="MenuButtonId" icon="sap-icon://megamenu" />
+
+                     <ToolbarSpacer id="_IDGenToolbarSpacer2" />
+                        <Button id="headerbelliconId" icon="sap-icon://bell" />
+
+                        <Button id="headergoalsId" icon="sap-icon://goal" />
+                    </OverflowToolbar>
+                </subHeader>
+
+        
+                <content />
+
+                <footer>
+                  <OverflowToolbar id="footerID" class="sapUiMediumMarginTop">
+                    <Button id="_IDGenButton1" text="Reject" type="Reject"/>
+                    <ToolbarSpacer id="_IDGenToolbarSpacer3"/>
+                    <Button id="_IDGenButton2" text="Accept" type="Accept"/>
+                </OverflowToolbar>
+                </footer>
+            </Page>
+        </pages>
+    </App>
 </mvc:View>
