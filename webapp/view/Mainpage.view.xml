@@ -12,9 +12,9 @@
                 showSubHeader="true"
                 title="{i18n>title}"
             >
+                <!-- Start of the Subheader -->
                 <subHeader>
                     <OverflowToolbar id="toolbar1">
-
                         <Avatar
                             id="avaterpage01"
                             src="https://w0.peakpx.com/wallpaper/355/178/HD-wallpaper-all-avengers-logo-end-game-marvel.jpg"
@@ -26,30 +26,144 @@
                             press="onPress"
                         />
 
-                     <ToolbarSpacer id="_IDGenToolbarSpacer1"  width="40px" />
+                        <ToolbarSpacer
+                            id="_IDGenToolbarSpacer1"
+                            width="40px"
+                        />
 
-                        <Text id="text01" text="|" />
-                        <Text id="test02" text="Menu" />
-                        <Button id="MenuButtonId" icon="sap-icon://megamenu" />
+                        <Text
+                            id="text01"
+                            text="|"
+                        />
+                        <Text
+                            id="test02"
+                            text="Menu"
+                        />
+                        <Button
+                            id="MenuButtonId"
+                            icon="sap-icon://megamenu"
+                        />
 
-                     <ToolbarSpacer id="_IDGenToolbarSpacer2" />
+                        <ToolbarSpacer id="_IDGenToolbarSpacer2" />
 
-                        <Button id="headerbelliconId" icon="sap-icon://bell"  	class="sapUiTinyMarginBeginEnd"  press="onPressNotification" />
+                        <Button
+                            id="headerbelliconId"
+                            icon="sap-icon://bell"
+                            class="sapUiTinyMarginBeginEnd"
+                            press="onPressNotification"
+                        />
 
-                        <Button id="headergoalsId" icon="sap-icon://goal"  class="sapUiTinyMarginBeginEnd"  press="OnPressGoals" />
-
+                        <Button
+                            id="headergoalsId"
+                            icon="sap-icon://goal"
+                            class="sapUiTinyMarginBeginEnd"
+                            press="OnPressGoals"
+                        />
                     </OverflowToolbar>
                 </subHeader>
 
-        
-                <content />
+                <!-- end of the SubHeader  -->
+
+                <!-- start of the Content  -->
+                <content>
+                    <SlideTile
+                        id="_IDGenSlideTile1"
+                        class="sapUiTinyMarginBegin sapUiTinyMarginTop"
+                    >
+                        <GenericTile
+                            id="_IDGenGenericTile1"
+                            backgroundImage="https://t4.ftcdn.net/jpg/04/74/19/77/240_F_474197731_U4rprIWgfeqBoRp5JXrXgIrrzNvuFixR.jpg"
+                            frameType="TwoByOne"
+                            press="pressOnTileOne"
+                        >
+                            <TileContent
+                                id="_IDGenTileContent1"
+                                footer="August 21, 2016"
+                            >
+                                <NewsContent
+                                    id="_IDGenNewsContent1"
+                                    contentText="SAP Unveils Powerful New Player Comparision Tool Exclusively on NFL.com"
+                                    subheader="Today, SAP News"
+                                />
+                            </TileContent>
+                        </GenericTile>
+
+                        <GenericTile
+                            id="_IDGenGenericTile2"
+                            backgroundImage="test-resources/sap/m/demokit/sample/SlideTile/images/NewsImage1.png"
+                            frameType="TwoByOne"
+                            press="pressOnTileTwo"
+                        >
+                            <TileContent
+                                id="_IDGenTileContent2"
+                                footer="August 21, 2016"
+                            >
+                                <NewsContent
+                                    id="_IDGenNewsContent2"
+                                    contentText="Wind Map: Monitoring Real-Time and Forecasted Wind Conditions across the Globe"
+                                    subheader="Today, SAP News"
+                                />
+                            </TileContent>
+                        </GenericTile>
+
+                        <GenericTile
+                            id="_IDGenGenericTile3"
+                            backgroundImage="test-resources/sap/m/demokit/sample/SlideTile/images/NewsImage1.png"
+                            frameType="TwoByOne"
+                            press="pressOnTileOne"
+                        >
+                            <TileContent
+                                id="_IDGenTileContent3"
+                                footer="August 21, 2016"
+                            >
+                                <NewsContent
+                                    id="_IDGenNewsContent3"
+                                    contentText="Wind Map: Monitoring Real-Time and Forecasted Wind Conditions across the Globe"
+                                    subheader="Today, SAP News"
+                                />
+                            </TileContent>
+                        </GenericTile>
+                        <GenericTile
+                            id="_IDGenGenericTile4"
+                            backgroundImage="test-resources/sap/m/demokit/sample/SlideTile/images/NewsImage2.png"
+                            frameType="TwoByOne"
+                            state="Failed"
+                        >
+                            <TileContent
+                                id="_IDGenTileContent4"
+                                footer="August 21, 2016"
+                            >
+                                <NewsContent
+                                    id="_IDGenNewsContent4"
+                                    contentText="SAP Unveils Powerful New Player Comparision Tool Exclusively on NFL.com"
+                                    subheader="Today, SAP News"
+                                />
+                            </TileContent>
+                        </GenericTile>
+                    </SlideTile>
+
+                    <!-- <Fragement  id="newsfeedId" fragmentName="com.sap.teammarvelhub.Fragment.Newsfeed" /> -->
+                </content>
+
+                <!-- End of the Content   -->
 
                 <footer>
-                  <OverflowToolbar id="footerID" class="sapUiMediumMarginTop">
-                    <Button id="_IDGenButton1" text="Reject" type="Reject"/>
-                    <ToolbarSpacer id="_IDGenToolbarSpacer3"/>
-                    <Button id="_IDGenButton2" text="Accept" type="Accept"/>
-                </OverflowToolbar>
+                    <OverflowToolbar
+                        id="footerID"
+                        class="sapUiMediumMarginTop"
+                    >
+                        <Button
+                            id="_IDGenButton1"
+                            text="Reject"
+                            type="Reject"
+                        />
+                        <ToolbarSpacer id="_IDGenToolbarSpacer3" />
+                        <Button
+                            id="_IDGenButton2"
+                            text="Accept"
+                            type="Accept"
+                        />
+                    </OverflowToolbar>
                 </footer>
             </Page>
         </pages>
