@@ -10,6 +10,13 @@ sap.ui.define([
         return Controller.extend("com.sap.teammarvelhub.controller.Mainpage", {
             onInit: function () {
 
+            },
+            
+            // when we click on the notification button these function will trigger 
+            onPressNotification:function(){
+
+                
+
             }
         });
     });

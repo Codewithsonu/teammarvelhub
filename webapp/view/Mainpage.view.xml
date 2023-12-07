@@ -14,6 +14,7 @@
             >
                 <subHeader>
                     <OverflowToolbar id="toolbar1">
+
                         <Avatar
                             id="avaterpage01"
                             src="https://w0.peakpx.com/wallpaper/355/178/HD-wallpaper-all-avengers-logo-end-game-marvel.jpg"
@@ -24,15 +25,19 @@
                             showBorder="false"
                             press="onPress"
                         />
+
                      <ToolbarSpacer id="_IDGenToolbarSpacer1"  width="40px" />
+
                         <Text id="text01" text="|" />
                         <Text id="test02" text="Menu" />
                         <Button id="MenuButtonId" icon="sap-icon://megamenu" />
 
                      <ToolbarSpacer id="_IDGenToolbarSpacer2" />
-                        <Button id="headerbelliconId" icon="sap-icon://bell" />
 
-                        <Button id="headergoalsId" icon="sap-icon://goal" />
+                        <Button id="headerbelliconId" icon="sap-icon://bell"  	class="sapUiTinyMarginBeginEnd"  press="onPressNotification" />
+
+                        <Button id="headergoalsId" icon="sap-icon://goal"  class="sapUiTinyMarginBeginEnd"  press="OnPressGoals" />
+
                     </OverflowToolbar>
                 </subHeader>
 
